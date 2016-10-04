@@ -1,14 +1,25 @@
-  header {
+header {
     text-align: center;
     padding-bottom: 2rem;
 
     ul {
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
     }
 
     li {
-      display: inline-block;
+        display: inline-block;
     }
 }
+
+
+@media (min-width: 880px) {
+    header ul {
+      text-align: right;
+
+    .site-header {
+      text-align: left;
+    }
+        }
+      }
