@@ -1,3 +1,35 @@
+body {
+  font-size: 62.5%;
+  color: #47A3DA; }
 
+header {
+  text-align: center;
+  padding-bottom: 2rem; }
+  header ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  header li {
+    display: inline-block; }
+
+body {
+  text-align: center;
+  padding: 2rem; }
+
+.product {
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #F7F7F7; }
+  .product:last-child {
+    border-bottom: 0; }
+  .product h3 {
+    position: relative; }
+  .product h3::before {
+    position: absolute;
+    content: '';
+    border-top: 3px solid #47A3DA;
+    width: 90px;
+    height: 3px;
+    top: -.5rem; }
 
 /*# sourceMappingURL=main.css.map */

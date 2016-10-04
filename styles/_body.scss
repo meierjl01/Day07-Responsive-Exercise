@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    padding: 2rem;
+}
+
+.product {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    border-bottom: 1px solid $color-secondary;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    h3 {
+        position: relative;
+    }
+
+    h3::before {
+        position: absolute;
+        content: '';
+        border-top: 3px solid $color-primary;
+        width: 90px;
+        height: 3px;
+        top: -.5rem;
+    }
+}
