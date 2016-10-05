@@ -12,14 +12,23 @@ header {
         display: inline-block;
     }
 }
-
-
 @media (min-width: 880px) {
-    header ul {
-      text-align: right;
+    header {
+        text-align: left;
+
+        ul {
+            float: right;
+            font-size: 3em;
+
+        li {
+          line-height: 137px;
+        }
+        }
+    }
 
     .site-header {
-      text-align: left;
+        text-align: left;
+        font-size: 2em;
+        display: inline-block;
     }
-        }
-      }
+}

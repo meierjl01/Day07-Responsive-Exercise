@@ -29,6 +29,11 @@ body {
 }
 
 
+    .product:hover {
+        background-color: $color-primary;
+        color: $color-secondary;
+}
+
 @media (min-width: 740px) {
     .product {
         float: left;
@@ -40,11 +45,13 @@ body {
     }
 }
 
-
 @media (min-width: 880px) {
     .product {
-          width: 33.3%;
-          border-right: 2px solid $color-secondary;
+        font-size: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        width: 33.3%;
+        border-right: 2px solid $color-secondary;
 
         &:nth-child(3n+1) {
             border-right: 0;

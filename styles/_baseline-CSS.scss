@@ -6,3 +6,19 @@ body {
 .product i {
   font-size: 8rem;
 }
+
+h4 {
+  color: $color-third;
+  position: relative;
+}
+
+h4::before {
+  border-top: 0;
+  border-bottom: 3px solid $color-third;
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: calc(50% - 45px);
+  top: 1rem;
+}

@@ -5,6 +5,20 @@ body {
 .product i {
   font-size: 8rem; }
 
+h4 {
+  color: #FFFFFF;
+  position: relative; }
+
+h4::before {
+  border-top: 0;
+  border-bottom: 3px solid #FFFFFF;
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 3px;
+  left: calc(50% - 45px);
+  top: 1rem; }
+
 header {
   text-align: center;
   padding-bottom: 2rem; }
@@ -16,10 +30,18 @@ header {
     display: inline-block; }
 
 @media (min-width: 880px) {
-  header ul {
-    text-align: right; }
-    header ul .site-header {
-      text-align: left; } }
+  header {
+    text-align: left; }
+    header ul {
+      float: right;
+      font-size: 3em; }
+      header ul li {
+        line-height: 137px; }
+
+  .site-header {
+    text-align: left;
+    font-size: 2em;
+    display: inline-block; } }
 body {
   text-align: center;
   padding: 2rem; }
@@ -42,6 +64,10 @@ body {
     left: calc(50% - 45px);
     top: -.5rem; }
 
+.product:hover {
+  background-color: #47A3DA;
+  color: #F7F7F7; }
+
 @media (min-width: 740px) {
   .product {
     float: left;
@@ -50,6 +76,9 @@ body {
       border-right: 2px solid #F7F7F7; } }
 @media (min-width: 880px) {
   .product {
+    font-size: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     width: 33.3%;
     border-right: 2px solid #F7F7F7; }
     .product:nth-child(3n+1) {
